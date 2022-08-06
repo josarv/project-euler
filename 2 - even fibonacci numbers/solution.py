@@ -1,23 +1,14 @@
 #!/usr/bin/env python3
 
-import math
-
-
-def fibonacci(n):
-    return round(pow((1 + math.sqrt(5)) / 2, n) / math.sqrt(5))
+def even_fibonacci_terms_up_to(n):
+    a, b = 2, 8
+    while a <= n:
+        yield a
+        a, b = b, 4 * b + a
 
 
 def main():
-    total = 0
-    n = 0
-    while True:
-        next_term = fibonacci(n)
-        if next_term > 4000000:
-            break
-        if next_term % 2 == 0:
-            total += next_term
-        n += 3
-    print(total)
+    print(sum(even_fibonacci_terms_up_to(4_000_000)))
 
 
 if __name__ == '__main__':
