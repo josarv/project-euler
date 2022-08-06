@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import math
 
 
@@ -6,16 +8,16 @@ def fibonacci(n):
 
 
 def main():
-    sum = 0
+    total = 0
     n = 0
     while True:
-        next = fibonacci(n)
-        if next > 4000000:
+        next_term = fibonacci(n)
+        if next_term > 4000000:
             break
-        if next % 2 == 0:
-            sum += next
+        if next_term % 2 == 0:
+            total += next_term
         n += 3
-    print(sum)
+    print(total)
 
 
 if __name__ == '__main__':
