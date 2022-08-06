@@ -24,3 +24,4 @@ docs/site/
 Manifest.toml
 
 .idea
+cmake-build-*

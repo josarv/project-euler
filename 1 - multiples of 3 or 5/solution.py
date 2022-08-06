@@ -1,11 +1,7 @@
 #!/usr/bin/env python3
 
 def main():
-    total = 0
-    for i in range(1000):
-        if i % 3 == 0 or i % 5 == 0:
-            total += i
-    print(total)
+    print(sum([i for i in range(1000) if not i % 3 or not i % 5]))
 
 
 if __name__ == '__main__':
