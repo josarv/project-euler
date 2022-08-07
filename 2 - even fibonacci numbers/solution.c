@@ -1,10 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#define N 4000000
+
 int main(void)
 {
-    long sum = 0, a = 1, b = 1, next = 0;
-    while (next <= 4000000)
+    unsigned long sum = 0, a = 1, b = 1, next = 0;
+    while (next <= N)
     {
         next = a + b;
         if (!(next % 2))

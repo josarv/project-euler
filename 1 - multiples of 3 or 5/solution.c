@@ -1,10 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#define N 1000
+
 int main(void)
 {
-    long sum = 0;
-    for (long i = 0; i < 1000; i++)
+    unsigned long sum = 0;
+    for (unsigned long i = 0; i < N; i++)
     {
         if (!(i % 3) || !(i % 5))
             sum += i;
