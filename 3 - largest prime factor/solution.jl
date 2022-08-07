@@ -1,13 +1,8 @@
 #!/usr/bin/env julia
 
-num = 600851475143
-i = 2
+import Pkg
+Pkg.add("Primes")
+import Primes
 
-while i ^ 2 < num
-    while num % i == 0
-        global num = num ÷ i
-    end
-    global i += 1
-end
-
-println(num)
+n = 600_851_475_143
+println(iterate(n ÷ i for i in 1:n if n % i == 0 && Primes.isprime(n ÷ i))[1])
