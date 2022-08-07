@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 
 def main():
-    i = 9699690
+    i = 9_699_690
     divisible = False
     while not divisible:
-        i += 9699690
+        i += 9_699_690
         divisible = True
         for j in range(1, 21):
             if i % j != 0:
