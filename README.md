@@ -12,5 +12,5 @@ To run the solution script for a problem, navigate to the directory of that prob
 ./solution.jl
 ```
 
-Requirements (Native): Julia (v1.6)
+Requirements (Native): Julia (v1.6)<br>
 Joseph Arvanitis - 2022
